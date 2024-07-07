@@ -16,6 +16,6 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
       - run:
-          docker build -t ghcr.io/kruemmelspalter/kasm-concrete:latest .
+          docker build -t ghcr.io/kruemmelspalter/kasm-concrete:latest . &&
           docker push ghcr.io/kruemmelspalter/kasm-concrete:latest
      

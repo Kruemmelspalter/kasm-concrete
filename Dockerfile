@@ -8,7 +8,8 @@ WORKDIR $HOME
 
 ######### Customize Container Here ###########
 
-RUN apt-get update -y && apt-get install -y scribus hyphen-de
+RUN apt-get update -y
+RUN apt-get install -y scribus hyphen-de
 
 ######### End Customizations ###########
 

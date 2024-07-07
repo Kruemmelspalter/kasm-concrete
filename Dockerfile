@@ -1,4 +1,4 @@
-FROM kasmweb/core-ubuntu-noble:latest
+FROM kasmweb/core-ubuntu-noble
 USER root
 
 ENV HOME /home/kasm-default-profile

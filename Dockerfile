@@ -10,6 +10,8 @@ WORKDIR $HOME
 
 RUN apt-get update -y
 RUN apt-get install -y scribus hyphen-de
+RUN apt-get install -y ttf-mscorefonts-installer
+RUN fc-cache -f -v
 
 ######### End Customizations ###########
 

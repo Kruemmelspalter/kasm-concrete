@@ -14,7 +14,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{github.actor}}
-          password: ${{secrets.GHCR_TOKEN}}
+          password: ${{secrets.GITHUB_TOKEN}}
       - run:
           docker build -t ghcr.io/kruemmelspalter/kasm-concrete:latest .
           docker push ghcr.io/kruemmelspalter/kasm-concrete:latest
